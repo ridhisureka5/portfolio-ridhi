@@ -1,5 +1,6 @@
 (() => {
   const launcher = document.querySelector('#agent-launcher');
+  const navOpen = document.querySelector('#agent-nav-open');
   const panel = document.querySelector('#chat-panel');
   const backdrop = document.querySelector('#chat-backdrop');
   const closeButton = document.querySelector('#close-chat');
@@ -10,22 +11,28 @@
   const history = [];
   const sessionKey = 'ridhi-agent-session';
   let sessionId = localStorage.getItem(sessionKey);
+  let chatOpener = launcher;
   if (!sessionId) {
     sessionId = window.crypto?.randomUUID?.() || `session-${Date.now()}-${Math.random().toString(36).slice(2)}`;
     localStorage.setItem(sessionKey, sessionId);
   }
 
-  function openChat() {
+  function openChat(opener = launcher, focusInput = true, showBackdrop = true) {
+    chatOpener = opener || launcher;
     panel.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.classList.toggle('open', showBackdrop);
     panel.setAttribute('aria-hidden', 'false');
-    window.setTimeout(() => input.focus(), 150);
+    launcher.setAttribute('aria-expanded', 'true');
+    navOpen.setAttribute('aria-expanded', 'true');
+    if (focusInput) window.setTimeout(() => input.focus(), 150);
   }
   function closeChat() {
     panel.classList.remove('open');
     backdrop.classList.remove('open');
     panel.setAttribute('aria-hidden', 'true');
-    launcher.focus();
+    launcher.setAttribute('aria-expanded', 'false');
+    navOpen.setAttribute('aria-expanded', 'false');
+    chatOpener.focus();
   }
   function appendInlineMarkdown(parent, text) {
     const pattern = /\*\*([^*]+)\*\*|\*([^*]+)\*|\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s<]+)/g;
@@ -141,12 +148,15 @@
     return row;
   }
 
-  launcher.addEventListener('click', openChat);
+  launcher.addEventListener('click', () => openChat(launcher));
+  navOpen.addEventListener('click', () => openChat(navOpen));
   closeButton.addEventListener('click', closeChat);
   backdrop.addEventListener('click', closeChat);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && panel.classList.contains('open')) closeChat();
   });
+  openChat(null, false, false);
+  window.requestAnimationFrame(() => panel.classList.add('arrival-highlight'));
   suggestions.addEventListener('click', (event) => {
     const button = event.target.closest('button');
     if (!button) return;
