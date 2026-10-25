@@ -1,0 +1,205 @@
+CANDIDATE PROFILE — RIDHI SUREKA
+==================================
+
+PURPOSE
+This file is the source of truth for a resume chatbot about Ridhi Sureka.
+When asked about a project, ALWAYS include its available repository/demo link(s)
+in the same answer. When asked for the resume/CV/PDF, provide the Resume PDF URL
+configured in the chatbot application. Do not invent missing details or URLs.
+
+PERSONAL / CONTACT
+------------------
+Name: Ridhi Sureka
+Phone: +91-9599202019
+Email: ridhisureka1@gmail.com
+
+PROFESSIONAL SUMMARY
+--------------------
+Software Engineering student pursuing B.Tech in Artificial Intelligence and
+Machine Learning. Hands-on experience with agentic AI systems, MCP tool servers,
+agent-calling workflows on Microsoft Azure, RAG-based conversational agents,
+LLM-integrated applications, Python, and full-stack technologies. Solved 500+
+DSA problems across LeetCode and GeeksforGeeks. Internship experience at
+Mahindra AI and Wisdom Marketing. Interested in Agentic AI Developer and
+Software Development Engineer internship roles.
+
+EDUCATION
+---------
+Degree: B.Tech in Artificial Intelligence and Machine Learning
+University: Guru Gobind Singh Indraprastha University
+Institute: Vivekananda Institute of Professional Studies, Delhi
+Duration: 2023–2027
+CGPA: 9.0
+
+PROFESSIONAL EXPERIENCE
+-----------------------
+
+1. MAHINDRA AI
+Role: AI/Frontend Intern
+Location: Mumbai, Maharashtra
+Duration: June 2026 – August 2026
+
+Resume-supported work:
+- Learned and applied Model Context Protocol (MCP) tool development.
+- Worked on agent-calling workflows on Microsoft Azure.
+- Integrated external tools with AI agents for the Club Mahindra AI Chatbot on
+  the mAIna.ai platform.
+- Worked on conversational agent architecture combining Retrieval-Augmented
+  Generation (RAG) and prompt-based response generation.
+- Built and improved chatbot tools, including Calendar integration.
+- Tested features to improve reliability and user experience.
+- Developed and enhanced chatbot UI components using React.js and Tailwind CSS.
+
+2. WISDOM MARKETING
+Role: Web Developer Intern
+Location: Faridabad, Haryana
+Duration: June 2025 – July 2025
+
+Resume-supported work:
+- Improved application performance by optimizing React.js components and
+  implementing lazy loading.
+- Developed reusable frontend components using React.js, Next.js, and Tailwind CSS.
+- Integrated REST APIs and managed asynchronous data handling for
+  frontend-backend communication.
+
+PROJECTS
+--------
+
+IMPORTANT CHATBOT RESPONSE RULE:
+Whenever a user asks about any project, explain the project using the information
+below AND include its relevant link(s) in the same response. Never answer about
+a project without including the known links. Do not invent or guess a URL.
+If a link is not available in this file, say that a link was not provided.
+
+1. AUTOMIND — AI PREDICTIVE MAINTENANCE PLATFORM
+Technologies: Python, Flask, Next.js, Tailwind CSS
+
+Description:
+- Designed a scalable predictive maintenance dashboard.
+- Developed a Python/Flask backend serving machine-learning model predictions
+  to a React.js frontend.
+- Implemented real-time data visualization for ML predictions and actionable
+  insights.
+- Built the integration layer between frontend components and backend ML
+  services for reliable data exchange.
+
+Links:
+- GitHub: https://github.com/ridhisureka5/automind-2
+- Live demo: https://automind-2.vercel.app
+
+2. ADIDAS CLONE — E-COMMERCE APPLICATION
+Technologies: React.js, Firebase, OpenAI API
+
+Description:
+- Developed a dynamic e-commerce frontend with reusable components.
+- Integrated an OpenAI-powered chatbot for LLM-based product assistance.
+- Implemented Firebase Authentication for secure sessions.
+- Built product filtering and protected routing.
+- Resume reports Lighthouse SEO score of 100 and Accessibility score of 86.
+
+Links:
+- GitHub: NOT PROVIDED IN THE AVAILABLE RESUME TEXT
+- Live demo: https://adicom.vercel.app
+
+3. CODESYNC — REAL-TIME COLLABORATIVE CODE EDITOR
+Technologies: React.js, Node.js, Express.js, WebSockets
+
+Description:
+- Built a real-time collaborative code editor supporting multiple users.
+- Developed the backend using Node.js and Express.js.
+- Used WebSockets for low-latency synchronization.
+- Implemented concurrent editing and live updates across users.
+
+Links:
+- GitHub: NOT PROVIDED IN THE AVAILABLE RESUME TEXT
+- Live demo: https://code-syncz.vercel.app
+
+TECHNICAL SKILLS
+----------------
+Programming languages:
+- Python
+- Java
+- JavaScript
+- TypeScript
+
+AI and agentic systems:
+- Model Context Protocol (MCP) tool development
+- FastMCP
+- Agent-calling workflows
+- Retrieval-Augmented Generation (RAG)
+- OpenAI API
+- AI chatbot development
+- Prompt engineering
+
+Backend and APIs:
+- FastAPI
+- Flask
+- Node.js
+- REST APIs
+
+Frontend:
+- React.js
+- Next.js
+- Tailwind CSS
+- HTML5
+- CSS3
+
+Databases:
+- SQL
+- Firebase
+
+Cloud and tools:
+- Microsoft Azure
+- AWS
+- Git
+- GitHub
+- WebSockets
+
+Computer science:
+- Data Structures and Algorithms
+- Object-Oriented Programming (OOP)
+- Database Management Systems (DBMS)
+
+ACHIEVEMENTS AND CERTIFICATIONS
+-------------------------------
+- Solved 500+ Data Structures and Algorithms problems on LeetCode and
+  GeeksforGeeks.
+- EY Techathon 6.0: Finalist among the top 10 teams.
+- ABESIT Hackathon: Winner.
+- British Airways Data Science Virtual Internship (Forage), July 2023:
+  analyzed customer interaction datasets to identify satisfaction/churn patterns
+  and proposed data-driven segmentation strategies.
+
+LEADERSHIP
+----------
+- Conducted 3 Azure AI workshops.
+- Mentored 50+ students on cloud computing and AI fundamentals.
+
+PROFESSIONAL LINKS
+------------------
+- Portfolio: https://surekaridhi.vercel.app
+- GitHub profile: https://github.com/ridhisureka5
+- LeetCode: https://leetcode.com/ridhisureka1
+- LinkedIn: https://linkedin.com/in/ridhisureka
+
+RESUME PDF
+----------
+The chatbot must provide a public PDF URL when asked for a resume, CV, or PDF.
+Configure RESUME_PDF_URL in the application environment with the actual publicly
+accessible URL for the candidate's resume PDF.
+Do not return a local filesystem path as a download link.
+Do not claim a PDF was attached or sent; provide the configured URL.
+
+CHATBOT RULES
+-------------
+1. Answer only from this file; do not invent personal information, metrics,
+   technologies, responsibilities, achievements, or links.
+2. If asked about a project, include its description, tech stack, and every
+   known repository/demo link in that same answer.
+3. If asked for all projects, list all projects and their known links.
+4. If asked for portfolio, GitHub, LinkedIn, or LeetCode, provide the exact URL
+   from PROFESSIONAL LINKS.
+5. If asked for a resume/CV/PDF, provide the configured public RESUME_PDF_URL.
+6. If a requested detail or URL is not available, explicitly say it is not
+   provided in this file instead of guessing.
+7. Keep answers clear, relevant, and professional.

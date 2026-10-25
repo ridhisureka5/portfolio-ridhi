@@ -1,0 +1,24 @@
+
+{
+  "name": "Ridhi Sureka",
+  "education": {
+    "degree": "B.Tech",
+    "specialization": "Artificial Intelligence and Machine Learning"
+  },
+  "skills": [
+    "Python",
+    "Machine Learning",
+    "React",
+    "Next.js"
+  ],
+  "projects": [
+    {
+      "name": "AutoMind",
+      "description": "AI-based predictive maintenance platform"
+    }
+  ],
+  "achievements": [
+    "EY Techathon 6.0 National Finalist",
+    "TCS CodeVita Season 13 Global Rank 214"
+  ]
+}
