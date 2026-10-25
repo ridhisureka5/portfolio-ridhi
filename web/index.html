@@ -3,70 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f7f4">
-  <meta name="description" content="Meet Ridhi Sureka, an AI and software engineering student building thoughtful AI products and full stack experiences.">
-  <title>Ridhi Sureka — AI & Software Engineer</title>
+  <meta name="theme-color" content="#f5f2e9">
+  <meta name="description" content="Ridhi Sureka — AI and Machine Learning student at VIPS, interested in agent tools, backend systems, and the interfaces people use.">
+  <title>Ridhi Sureka — AI &amp; ML student</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="wordmark" href="#home" aria-label="Ridhi Sureka home"><span class="mark">RS</span><span>Ridhi Sureka</span></a>
-      <nav class="main-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#work">Selected work</a><a href="#journey">Journey</a></nav>
-      <a class="contact-link" href="mailto:ridhisureka1@gmail.com">Let's connect <span>↗</span></a>
-    </header>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Ridhi Sureka, home"><span class="mark">RS</span><span>Ridhi Sureka</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#work">Work</a><a href="#journey">Experience</a><a href="#about">About</a>
+    </nav>
+    <a class="contact-link" href="mailto:ridhisureka1@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+  </header>
 
-    <main id="home">
-      <section class="hero section-wrap">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="availability-dot"></span> AI &amp; ML STUDENT <span class="eyebrow-line"></span> DELHI</div>
-          <h1>I like the part<br>where AI meets <span>people.</span></h1>
-          <p class="hero-description">Hey, I’m Ridhi. I’m studying AI &amp; Machine Learning at VIPS. At Mahindra AI, I worked on agent tools and chatbot UI. I like being close to both the technical bits and the experience around them.</p>
-          <div class="hero-actions"><a class="button button-dark" href="#work">A few things I’ve made <span>↘</span></a><a class="text-button" href="/resume.pdf" target="_blank" rel="noreferrer">My résumé <span>↗</span></a></div>
-          <div class="hero-foot"><span>500+ DSA PROBLEMS SOLVED</span><span>STILL FIGURING THINGS OUT</span></div>
+  <main id="home">
+    <section class="intro section-wrap" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="availability-dot"></span> AI &amp; ML STUDENT <span class="eyebrow-divider">/</span> DELHI, INDIA</p>
+        <h1 id="intro-title">Hey, I’m Ridhi<span class="period">.</span></h1>
+        <p class="intro-lede">I’m studying AI &amp; Machine Learning at VIPS. At Mahindra AI, I worked on MCP tools, Azure agent workflows, and chatbot UI. I like getting close to both the system behind a product and the interface in front of it.</p>
+        <div class="intro-links"><a class="primary-link" href="#automind">Start with AutoMind <span aria-hidden="true">↓</span></a><a class="secondary-link" href="/resume.pdf" target="_blank" rel="noreferrer">Résumé <span aria-hidden="true">↗</span></a><button class="guide-link" id="agent-launcher" type="button">Ask my portfolio guide <span aria-hidden="true">↗</span></button></div>
+      </div>
+      <aside class="intro-aside" aria-label="A few details">
+        <div class="aside-item"><span class="aside-label">RIGHT NOW</span><p>B.Tech, AI &amp; Machine Learning<br>VIPS · GGSIPU · 2023—27</p></div>
+        <div class="aside-item"><span class="aside-label">RECENTLY</span><p>AI / Frontend Intern<br>Mahindra AI · Jun—Aug 2026</p></div>
+        <div class="aside-item"><span class="aside-label">INTERESTED IN</span><p>Agentic AI Developer<br>Software Engineering internships</p></div>
+      </aside>
+    </section>
+
+    <section class="work-section section-wrap" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div><p class="eyebrow section-kicker">A FEW THINGS I’VE BUILT</p><h2 id="work-title">Selected work<span class="period">.</span></h2></div>
+        <p class="section-note">The projects I can talk through<br>from the model to the interface.</p>
+      </div>
+
+      <article class="project-featured" id="automind">
+        <div class="project-map" aria-label="AutoMind connects machine learning predictions to a Flask backend and Next.js dashboard">
+          <div class="map-topline"><span>01 / AI SYSTEMS</span><span>AUTOMIND</span></div>
+          <p class="map-title">Predictions<br>need a way<br><span>to be useful.</span></p>
+          <div class="system-flow"><div><span>01</span><strong>ML model</strong><small>maintenance predictions</small></div><i aria-hidden="true">→</i><div><span>02</span><strong>Flask API</strong><small>backend integration</small></div><i aria-hidden="true">→</i><div><span>03</span><strong>Next.js</strong><small>dashboard + visuals</small></div></div>
+          <span class="map-foot">PYTHON · FLASK · NEXT.JS</span>
         </div>
-        <div class="hero-art" aria-label="A note about the work Ridhi enjoys">
-          <div class="art-top"><span>R. SUREKA / A NOTE</span><span>DELHI, INDIA</span></div>
-          <div class="paper-tape"></div>
-          <div class="desk-note"><span class="note-label">A THING I KEEP COMING BACK TO</span><p class="handwritten-note">The whole journey matters.</p><div class="note-sketch"><span class="sketch-line line-one"></span><span class="sketch-dot"></span><span class="sketch-line line-two"></span><span class="sketch-arrow">↗</span></div><p class="note-detail">From an AI tool call<br>to the button someone taps.</p><div class="note-bottom"><span>AGENTS · APIS · INTERFACES</span><span>✳</span></div></div>
-          <div class="art-caption"><span class="caption-star">✳</span><span>BUILDING THE BITS<br>PEOPLE ACTUALLY USE.</span></div>
-          <span class="art-side-note">CURRENTLY LEARNING · ALWAYS</span>
+        <div class="featured-copy">
+          <p class="project-type">PREDICTIVE MAINTENANCE</p>
+          <h3>AutoMind</h3>
+          <p class="project-summary">A predictive-maintenance platform that brings model output into a dashboard people can read.</p>
+          <p class="project-detail">I built the integration between a Python / Flask prediction backend and a Next.js frontend, including visualizations for model predictions and actionable insights. The interesting part for me was making the handoff between those pieces reliable and understandable.</p>
+          <div class="project-meta"><span>Python</span><span>Flask</span><span>Next.js</span><span>Tailwind CSS</span></div>
+          <div class="project-links"><a href="https://automind-2.vercel.app" target="_blank" rel="noreferrer">Open live project <span aria-hidden="true">↗</span></a><a href="https://github.com/ridhisureka5/automind-2" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a></div>
         </div>
-        <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
-      </section>
+      </article>
 
-      <section class="intro-band" id="about"><div class="section-wrap intro-inner"><span class="section-index">A LITTLE ABOUT ME</span><p>Most of my work sits somewhere between AI systems and the interface around them. I’ve built MCP tools, worked with RAG, and made React components—and I’m still curious about <em>how all those pieces fit together.</em></p><a href="https://linkedin.com/in/ridhisureka" target="_blank" rel="noreferrer" class="round-link" aria-label="LinkedIn">↗</a></div></section>
+      <div class="other-projects">
+        <article class="project-row adidas-project">
+          <div class="project-index"><span>02</span><span>ECOMMERCE / AI</span></div>
+          <div class="project-row-copy"><h3>Adidas Clone</h3><p>I put product browsing, Firebase sign-in, and an OpenAI assistant for product questions in one small shopping experience.</p><div class="project-meta"><span>React</span><span>Firebase</span><span>OpenAI API</span></div></div>
+          <a class="row-link" href="https://adicom.vercel.app" target="_blank" rel="noreferrer" aria-label="Open Adidas Clone live demo">↗</a>
+        </article>
+        <article class="project-row codesync-project">
+          <div class="project-index"><span>03</span><span>REAL-TIME / COLLABORATION</span></div>
+          <div class="project-row-copy"><h3>CodeSync</h3><p>A shared browser editor. I built the Node and Express backend and used WebSockets to keep collaborators’ views in sync.</p><div class="project-meta"><span>React</span><span>Node.js</span><span>Express</span><span>WebSockets</span></div></div>
+          <div class="sync-flow" aria-label="React editor connects to an Express server over WebSockets"><span>React editor</span><i aria-hidden="true">↔</i><span>WebSocket</span><i aria-hidden="true">↔</i><span>Express</span></div>
+          <a class="row-link" href="https://code-syncz.vercel.app" target="_blank" rel="noreferrer" aria-label="Open CodeSync live demo">↗</a>
+        </article>
+      </div>
+    </section>
 
-      <section class="work-section section-wrap" id="work">
-        <div class="section-heading"><div><span class="section-index">SELECTED WORK</span><h2>A few things<br>I’ve <em>worked on.</em></h2></div><p>Different problems, different stacks.<br>Each one taught me something.</p></div>
-        <div class="project-grid">
-          <article class="project-card project-featured"><div class="project-visual automind-art"><span class="visual-label">AUTOMIND / PREDICTIVE MAINTENANCE</span><div class="dashboard"><div class="dash-top"><i></i><i></i><i></i><span>Maintenance overview</span></div><div class="dash-metric"><small>MODEL SIGNALS</small><strong class="dash-title">Prediction<br>feed</strong><div class="metric-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="dash-bottom"><span>●&nbsp; Insights ready</span><span>View trend ↗</span></div></div><span class="visual-orbit"></span></div><div class="project-info"><div><span class="project-type">AI / PREDICTIVE MAINTENANCE</span><h3>AutoMind</h3><p>I connected a Python/Flask prediction backend to a Next.js dashboard, with live visualizations to help make maintenance signals easier to act on.</p></div><div class="project-actions"><a class="project-arrow" href="https://automind-2.vercel.app" target="_blank" rel="noreferrer" aria-label="Open AutoMind live demo">↗</a><a class="project-source" href="https://github.com/ridhisureka5/automind-2" target="_blank" rel="noreferrer">Source ↗</a></div><div class="tag-row"><span>Python</span><span>Flask</span><span>Next.js</span><span>Tailwind CSS</span></div></div></article>
-          <article class="project-card"><div class="project-visual adidas-art"><span class="visual-label">ADIDAS / E-COMMERCE</span><div class="shoe-shape"><div class="shoe-upper"></div><div class="shoe-sole"></div><i></i><i></i><i></i></div><span class="adidas-word">adidas</span><span class="adidas-orbit">A NEW<br>ANGLE ON<br>EVERYDAY.</span></div><div class="project-info"><div><span class="project-type">ECOMMERCE / AI ASSISTANCE</span><h3>Adidas Clone</h3><p>A small e-commerce build with product filters, Firebase sign-in, and an OpenAI assistant for product questions.</p></div><a class="project-arrow" href="https://adicom.vercel.app" target="_blank" rel="noreferrer" aria-label="Open Adidas Clone live demo">↗</a><div class="tag-row"><span>React</span><span>Firebase</span><span>OpenAI API</span></div></div></article>
-          <article class="project-card"><div class="project-visual codesync-art"><span class="visual-label">CODESYNC / COLLABORATIVE EDITOR</span><div class="code-window"><div class="code-top"><span></span><span></span><span></span><small>collab.js</small></div><div class="code-lines"><b>01</b><span><i>const</i> room = <em>"build-together"</em>;</span><b>02</b><span>socket.<i>on</i>(<em>"change"</em>, sync);</span><b>03</b><span>cursor.<i>move</i>(position);</span><b>04</b><span><i>await</i> room.<i>connect</i>();</span></div><div class="cursor-label">Ridhi <span></span></div><div class="cursor-label second">Dev <span></span></div></div><div class="sync-badge">LIVE <i></i></div></div><div class="project-info"><div><span class="project-type">REAL-TIME / COLLABORATION</span><h3>CodeSync</h3><p>A browser-based shared editor. The interesting part was keeping everyone’s view in sync over WebSockets.</p></div><a class="project-arrow" href="https://code-syncz.vercel.app" target="_blank" rel="noreferrer" aria-label="Open CodeSync live demo">↗</a><div class="tag-row"><span>React</span><span>Node.js</span><span>Express</span><span>WebSockets</span></div></div></article>
+    <section class="journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="section-wrap journey-inner">
+        <div class="journey-intro"><p class="eyebrow section-kicker">WORK &amp; STUDY</p><h2 id="journey-title">A little of<br>what I’ve been up to<span class="period">.</span></h2><p>Each role gave me a different view of how software gets made and used.</p></div>
+        <div class="journey-list">
+          <article><time datetime="2026-06">JUN—AUG 2026</time><div><h3>AI / Frontend Intern <span>Mahindra AI · Mumbai</span></h3><p>I worked on MCP tools, Azure agent-calling workflows, RAG chatbot features, and React / Tailwind UI.</p></div></article>
+          <article><time datetime="2025-06">JUN—JUL 2025</time><div><h3>Web Developer Intern <span>Wisdom Marketing · Faridabad</span></h3><p>I made reusable React and Next.js components, connected REST APIs, and worked on performance improvements.</p></div></article>
+          <article><time datetime="2023">2023—2027</time><div><h3>B.Tech, AI &amp; Machine Learning <span>VIPS · GGSIPU</span></h3><p>Currently studying in Delhi. CGPA: 9.0.</p></div></article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="journey-section" id="journey"><div class="section-wrap journey-inner"><div class="journey-head"><span class="section-index">EXPERIENCE &amp; EDUCATION</span><h2>Still learning<br>as I <em>go.</em></h2><p>So far, that’s meant internships, a lot of building, and a B.Tech focused on AI &amp; Machine Learning.</p></div><div class="journey-list"><article><span class="journey-date">JUN — AUG 2026</span><div><h3>AI / Frontend Intern <span>Mahindra AI</span></h3><p>I worked on MCP tools and Azure agent workflows, and helped improve the chatbot UI in React and Tailwind.</p></div><span class="journey-plus">↗</span></article><article><span class="journey-date">JUN — JUL 2025</span><div><h3>Web Developer Intern <span>Wisdom Marketing</span></h3><p>I built reusable React and Next.js components, connected REST APIs, and worked on performance improvements.</p></div><span class="journey-plus">↗</span></article><article><span class="journey-date">2023 — 2027</span><div><h3>B.Tech, AI &amp; Machine Learning <span>VIPS · GGSIPU</span></h3><p>Studying at Vivekananda Institute of Professional Studies, Delhi. Current CGPA: 9.0.</p></div><span class="journey-plus">↗</span></article></div></div></section>
+    <section class="about-section section-wrap" id="about" aria-labelledby="about-title">
+      <p class="eyebrow section-kicker">OUTSIDE THE JOB TITLES</p>
+      <div class="about-copy"><h2 id="about-title">Things I keep<br>coming back to<span class="period">.</span></h2><div><p>I’m interested in agentic AI, backend systems, and the small interface decisions that make a tool easier to use. My recent work has involved MCP, RAG, and connecting external tools to AI agents.</p><p>Outside projects and classes, I’ve solved 500+ DSA problems, mentored 50+ students in cloud and AI workshops, and been part of an EY Techathon 6.0 finalist team. My team also won the ABESIT Hackathon.</p><a class="about-resume" href="/resume.pdf" target="_blank" rel="noreferrer">The résumé has the longer version <span aria-hidden="true">↗</span></a></div></div>
+    </section>
 
-      <section class="signals-section section-wrap"><div class="signals-title"><span class="section-index">A FEW THINGS I’M PROUD OF</span><h2>Little milestones<br>that mean <em>a lot.</em></h2></div><div class="signal-grid"><article><strong>9.0</strong><span>CGPA<br>GGSIPU</span><i>✳</i></article><article><strong>500<span>+</span></strong><span>DSA PROBLEMS<br>SOLVED</span><i>⌘</i></article><article><strong>Top 10</strong><span>EY TECHATHON<br>6.0 FINALIST</span><i>↗</i></article><article><strong>50<span>+</span></strong><span>STUDENTS<br>MENTORED</span><i>◎</i></article></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="section-wrap contact-inner"><p class="eyebrow section-kicker">THAT’S THE SHORT VERSION</p><div><h2 id="contact-title">Want to talk<br>about something you’re building?</h2><a class="contact-email" href="mailto:ridhisureka1@gmail.com">ridhisureka1@gmail.com <span aria-hidden="true">↗</span></a></div><a class="contact-profile" href="https://linkedin.com/in/ridhisureka" target="_blank" rel="noreferrer">LinkedIn profile <span aria-hidden="true">↗</span></a></div></section>
+  </main>
 
-      <section class="contact-section"><div class="section-wrap contact-inner"><span class="section-index">SAY HELLO</span><h2>Have a good problem?<br>I’d love to <em>hear about it.</em></h2><div class="contact-bottom"><p>If you’re building with AI, looking for an intern,<br>or just want to talk shop, drop me a note.</p><a class="button button-light" href="mailto:ridhisureka1@gmail.com">Email me <span>↗</span></a></div><span class="contact-spark">✳</span></div></section>
-    </main>
+  <footer class="footer section-wrap"><a class="wordmark" href="#home"><span class="mark">RS</span><span>Ridhi Sureka</span></a><span class="footer-note">A personal site · Delhi, India</span><div class="footer-links"><a href="https://github.com/ridhisureka5" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/ridhisureka" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ridhisureka1@gmail.com">Email ↗</a></div></footer>
 
-    <footer class="footer section-wrap"><a class="wordmark" href="#home"><span class="mark">RS</span><span>Ridhi Sureka</span></a><span>© 2026 · MADE IN DELHI</span><div class="footer-links"><a href="https://github.com/ridhisureka5" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/ridhisureka" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:ridhisureka1@gmail.com">Email ↗</a></div></footer>
-  </div>
-
-  <aside class="tour-card" id="tour-card" aria-label="Quick portfolio tour"><button class="tour-close" id="tour-close" aria-label="Dismiss quick tour">×</button><span class="tour-kicker"><i></i> A QUICK HELLO</span><p>Hey, glad you stopped by. Want to start with my projects, experience, or a quick intro?</p><div class="tour-bubbles"><button data-target="work">Projects <span>↘</span></button><button data-target="journey">Experience <span>↘</span></button><button data-target="about">About me <span>↘</span></button></div><button class="tour-chat" id="tour-chat">Or ask me something <span>↗</span></button></aside>
-  <button class="agent-launcher" id="agent-launcher" aria-label="Chat with Ridhi's AI agent"><span class="launcher-icon">✳</span><span>Say hello to my AI guide</span><span class="launcher-arrow">↗</span></button>
   <div class="chat-backdrop" id="chat-backdrop"></div>
-  <aside class="chat-panel" id="chat-panel" aria-label="Ridhi's personal AI agent" aria-hidden="true">
-    <div class="chat-header"><div class="agent-avatar">RS<span></span></div><div class="agent-heading"><strong>Ridhi’s AI agent</strong><span><i></i> HERE TO HELP</span></div><button class="close-chat" id="close-chat" aria-label="Close chat">×</button></div>
-    <div class="agent-note"><span>✳</span><p>I can help with projects, internships, skills, or education. What are you curious about?</p></div>
-    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="message assistant-message"><span class="message-avatar">RS</span><div class="message-bubble">Hi, I’m Ridhi’s portfolio guide. Ask me about something specific, or pick a question to get started.</div></div><div class="suggestions" id="suggestions"><button>What did you work on at Mahindra AI?</button><button>Can you walk me through AutoMind?</button><button>What are you hoping to do next?</button></div></div>
-    <form class="chat-form" id="chat-form"><label for="chat-input" class="sr-only">Ask a question</label><textarea id="chat-input" rows="1" maxlength="4000" placeholder="Ask me anything about Ridhi…"></textarea><button type="submit" aria-label="Send message">↑</button><div class="chat-footnote">GROUNDED IN RIDHI’S RESUME</div></form>
+  <aside class="chat-panel" id="chat-panel" aria-label="Ridhi’s portfolio guide" aria-hidden="true">
+    <div class="chat-header"><div class="agent-avatar">RS</div><div class="agent-heading"><strong>Ridhi’s portfolio guide</strong><span>Ask about a project, role, or skill</span></div><button class="close-chat" id="close-chat" type="button" aria-label="Close chat">×</button></div>
+    <div class="agent-note"><p>I can help you find the relevant project or experience.</p></div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="message assistant-message"><span class="message-avatar">RS</span><div class="message-bubble">Hi, I’m Ridhi’s portfolio guide. What would you like to know?</div></div><div class="suggestions" id="suggestions"><button type="button">Explore my projects</button><button type="button">Tell me about my experience</button><button type="button">What am I learning?</button></div></div>
+    <form class="chat-form" id="chat-form"><label for="chat-input" class="sr-only">Ask a question</label><textarea id="chat-input" rows="1" maxlength="4000" placeholder="Ask me about Ridhi…"></textarea><button type="submit" aria-label="Send message">↑</button><div class="chat-footnote">ANSWERS GROUNDED IN THE RÉSUMÉ</div></form>
   </aside>
   <script src="/assets/app.js" defer></script>
 </body>

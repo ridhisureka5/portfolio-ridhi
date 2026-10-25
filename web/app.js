@@ -7,9 +7,6 @@
   const input = document.querySelector('#chat-input');
   const messages = document.querySelector('#chat-messages');
   const suggestions = document.querySelector('#suggestions');
-  const tourCard = document.querySelector('#tour-card');
-  const tourClose = document.querySelector('#tour-close');
-  const tourChat = document.querySelector('#tour-chat');
   const history = [];
   const sessionKey = 'ridhi-agent-session';
   let sessionId = localStorage.getItem(sessionKey);
@@ -19,7 +16,6 @@
   }
 
   function openChat() {
-    tourCard.classList.remove('shown');
     panel.classList.add('open');
     backdrop.classList.add('open');
     panel.setAttribute('aria-hidden', 'false');
@@ -146,20 +142,11 @@
   }
 
   launcher.addEventListener('click', openChat);
-  tourChat.addEventListener('click', openChat);
-  tourClose.addEventListener('click', () => tourCard.classList.remove('shown'));
-  tourCard.addEventListener('click', (event) => {
-    const bubble = event.target.closest('[data-target]');
-    if (!bubble) return;
-    document.getElementById(bubble.dataset.target)?.scrollIntoView({ behavior: 'smooth' });
-    tourCard.classList.remove('shown');
-  });
   closeButton.addEventListener('click', closeChat);
   backdrop.addEventListener('click', closeChat);
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && panel.classList.contains('open')) closeChat();
   });
-  window.setTimeout(() => tourCard.classList.add('shown'), 900);
   suggestions.addEventListener('click', (event) => {
     const button = event.target.closest('button');
     if (!button) return;
