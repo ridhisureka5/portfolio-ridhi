@@ -1,4 +1,15 @@
 (() => {
+  document.querySelector('#desktop-search')?.addEventListener('click', () => {
+    const query = window.prompt('Find a project or section');
+    if (!query) return;
+    const match = [...document.querySelectorAll('main h2, main h3, main article, main section')]
+      .find((item) => item.textContent.toLowerCase().includes(query.toLowerCase()));
+    if (match) {
+      match.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      match.animate([{ outline: '2px solid #0a84ff' }, { outline: '2px solid transparent' }], { duration: 1300 });
+    } else window.alert(`No match for “${query}”. Try AutoMind, experience, or contact.`);
+  });
+  document.querySelector('#dock-ask')?.addEventListener('click', () => document.querySelector('#agent-launcher')?.click());
   const launcher = document.querySelector('#agent-launcher');
   const navOpen = document.querySelector('#agent-nav-open');
   const panel = document.querySelector('#chat-panel');
@@ -136,7 +147,14 @@
     if (role !== 'user') {
       const avatar = document.createElement('span');
       avatar.className = 'message-avatar';
-      avatar.textContent = 'RS';
+      const portrait = document.createElement('img');
+      portrait.src = '/assets/ridhi.jpg';
+      portrait.alt = '';
+      portrait.onerror = () => portrait.remove();
+      avatar.append(portrait);
+      const fallback = document.createElement('span');
+      fallback.textContent = 'R';
+      avatar.append(fallback);
       row.append(avatar);
     }
     const bubble = document.createElement('div');
